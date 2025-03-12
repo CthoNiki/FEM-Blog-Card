@@ -1,0 +1,109 @@
+  @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+  :root {
+    --font: "Figtree", sans-serif;
+    --darkColor: #111111;
+    --paragraphColor: #6b6b6b;
+    --pageColor: #f4d04e;
+    --spacing200: 1.5rem;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .pageWrapper {
+    width: 100%;
+    height: 100vh;
+    background: var(--pageColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    scrollbar-width: none;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 384px;
+    margin: var(--spacing200);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing200);
+    border: 1px solid var(--darkColor);
+    padding: var(--spacing200);
+    box-shadow: 8px 8px 0px 0 rgba(0, 0, 0, 1);
+  }
+
+  .imgWrapper {
+    width: 100%;
+  }
+
+  .imgWrapper img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .copyWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .badgeWrapper {
+    display: flex;
+  }
+
+  .badge {
+    background: lightgrey;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
+  .learning {
+    background: var(--pageColor);
+  }
+
+  .date {
+    line-height: 1.5;
+    color: var(--darkColor);
+  }
+
+  .copyWrapper h1 {
+    color: var(--darkColor);
+    font-size: 1.375rem;
+    font-weight: 700;
+    line-height: 1.5;
+    transition: all 0.2s ease;
+  }
+
+  .copyWrapper h1:hover {
+    color: var(--pageColor);
+  }
+
+  .copyWrapper p {
+    color: var(--paragraphColor);
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .credit {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.75rem;
+
+    font-weight: 800;
+    color: var(--darkColor);
+  }
